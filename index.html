@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="TodoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Todolist with AngularJS</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<h1>待辦事項</h1>
+
+	<section id="todoApp" ng-controller="TodoCtrl">
+
+		<header>
+			<form action="">
+				<button ng-click="addTodo()">+</button>
+				<input type="text" ng-model="newTodo" placeholder="還想幹什麼？">
+			</form>
+		</header>
+		
+		<div class="todoItem" ng-repeat="todo in todos | filter: filterValue track by $index" ng-class="{ completed: todo.completed }">
+			<input type="checkbox" ng-model="todo.completed" ng-change="toggleCompleted($index)">
+			<button ng-click="removeTodo($index)">x</button>
+			{{ todo.text }}
+		</div>
+
+		<div class="searchField">
+			<input type="text" ng-model="filterValue" placeholder="搜尋條目">
+		</div>
+
+	</section>
+
+	<footer>
+		<p>在本地創建並組織你的待辦事項</p>
+		<p>Powered by <a href="http://jasonlamswatow.com">Jason Lam</a></p>
+	</footer>
+
+</body>
+<script src="javascript/lib/angular.min.js"></script>
+<script src="javascript/controllers/todoCtrl.js"></script>
+<script src="javascript/services/todoStorage.js"></script>
+</html>
