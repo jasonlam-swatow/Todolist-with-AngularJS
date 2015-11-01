@@ -1,17 +1,17 @@
 # Todolist with Angular
 
-�@�ǂ���AngularJS�������ɵġ���RESTful�L��Ĵ��k��헑��á�
+這是個用 AngularJS 寫成的待辦事項應用。
 
 ## Overview
 
-�������£�
+功能如下：
 
-1. ��ݔ������I����k����ᣬ����߅�ļ�̖������܇�I�����Ʉ���һ�l���k��헣�
-2. ����ф����Ĵ��k��헣����x��߅��checkbox�����Ԅh������ӛ����ɠ�B���򰴄h�����o������ָᘑҸ��ԓ���k��헷����F�������Ƴ�֮��
-3. ���·��ġ��ь��lĿ��ݔ����ṩ�ˏ����ь��C�ƣ�����Ҋ�����õغY�x�ф����Ĵ��k��Σ�
-4. ʹ����localStorage���ش惦����ʹ�P�]���/�g�[��/�C�����������Ĵ��k��헼����B������c�񣩾������m���ڡ�
+1. 在輸入欄中鍵入待辦事項後，按左邊的加號掣或撳回車鍵，即可創建一條待辦事項；
+2. 對於已創建的待辦事項，勾選左邊的 checkbox 即可以刪除線標記其完成狀態，或按刪除按鈕（滑鼠指針懸浮於該待辦事項方出現）永久移除之；
+3. 最下方的「搜尋條目」輸入框提供了彈性搜尋機制，能所見即所得地篩選已創建的待辦清單；
+4. 使用了 localStorage 本地存儲，即使關閉頁面/瀏覽器/機器，所創建的待辦事項及其狀態（完成與否）均會持續存在。
 
 ## Notice
 
-* ԓ�Ŀ���ܕ������뵽MVC����������[TodoMVC](http://todomvc.com)�������ߘI��߉݋�����ܼ��������a�Y������ͬ���^������ԭ����
-* δ��Internet Explorer�yԇ�^�������C�o��ʽ������ܑ�ԓ�o���}��
+* 該項目可能會令你聯想到 MVC 界著名範例[TodoMVC](http://todomvc.com)，但兩者業務邏輯、功能細節、代碼結構均不同，絕對保持原創！
+* 未在 Internet Explorer 下測試過，不保證無樣式差異，功能應該無問題。
